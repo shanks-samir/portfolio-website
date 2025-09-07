@@ -21,6 +21,25 @@
     <link rel="stylesheet" href="example-master/css/flaticon.css">
     <link rel="stylesheet" href="example-master/css/icomoon.css">
     <link rel="stylesheet" href="example-master/css/style.css">
+    <style>
+      :root { --body-color: #374151; --muted-color: #6b7280; --divider-color: #cbd5e1; }
+      body { color: var(--body-color); }
+      p, .text-muted, .about-info li span:last-child,
+      .resume-wrap .text span.position,
+      .resume-wrap .text .date,
+      .resume-wrap .text p,
+      .ftco-section .heading-section p { color: var(--body-color) !important; }
+      .text-muted { color: var(--muted-color) !important; }
+      /* Make light divider lines more visible */
+      hr { border-top-color: var(--divider-color) !important; border-color: var(--divider-color) !important; background-color: var(--divider-color) !important; opacity: 1; }
+      .border-bottom { border-bottom-color: var(--divider-color) !important; }
+      [class*="border-bottom-"] { border-bottom-color: var(--divider-color) !important; }
+      .dropdown-divider { border-top-color: var(--divider-color) !important; }
+      /* Preserve footer contrast */
+      .ftco-footer, .ftco-footer p, .ftco-footer a,
+      .ftco-footer .text, .ftco-footer .block-23 ul li span,
+      .ftco-footer .ftco-heading-2 { color: rgba(255,255,255,0.9) !important; }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     
@@ -37,7 +56,7 @@
             <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
             <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
             <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Photos</span></a></li>
             <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
           </ul>
         </div>
@@ -123,7 +142,10 @@
                 <li><a href="#page-1">Education</a></li>
                 <li><a href="#page-2">Experience</a></li>
                 <li><a href="#page-3">Skills</a></li>
-                <li><a href="#page-4">Projects</a></li>
+                <li><a href="#page-4">Certifications</a></li>
+                <li><a href="#page-5">Projects</a></li>
+                <li><a href="#projects-section">Photo</a></li>
+                <li><a href="#contact-section">Contact Me</a></li>
               </ul>
             </nav>
           </div>
@@ -241,11 +263,31 @@
                 </div>
               </div>
             </div>
+            <hr class="mt-2 mb-4">
             <div id="page-4" class= "page four">
+              <h2 class="heading">Certifications</h2>
+              <div class="resume-wrap ftco-animate">
+                <div class="text pl-0">
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-3">
+                      <strong>Python Coding and Programming Course</strong> — Samsung Innovation Campus
+                      <span class="text-muted d-block">6-month onsite program at Pulchowk Campus, Nepal</span>
+                      <a href="https://drive.google.com/file/d/1AJ6KRbRGB_tAJYf3i4ii7E_MDp_w-Pra/view" target="_blank" class="d-inline-block mt-1">View certificate</a>
+                    </li>
+                    <li class="mb-3">
+                      <strong>AWS Academy Graduate — Data Engineering</strong> — AWS Academy
+                      <a href="https://www.credly.com/badges/a5f0cde9-7e10-4419-b530-d64b915cf3af/linked_in_profile" target="_blank" class="d-inline-block mt-1">View badge</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div id="page-5" class= "page five">
               <h2 class="heading">Projects</h2>
               <div class="resume-wrap d-flex ftco-animate">
                 <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-ideas"></span>
+                  <img src="website%20photos/sign.png" alt="Sign language project icon" style="width: 40px; height: 40px; object-fit: contain;">
                 </div>
                 <div class="text pl-3">
                     <span class="date">2024</span>
@@ -259,10 +301,10 @@
                 </div>
                 <div class="resume-wrap d-flex ftco-animate">
                   <div class="icon d-flex align-items-center justify-content-center">
-                    <span class="flaticon-ideas"></span>
+                    <img src="website%20photos/data.png" alt="Data engineering project icon" style="width: 40px; height: 40px; object-fit: contain;">
                   </div>
                   <div class="text pl-3">
-                    <span class="date">2024</span>
+                    <span class="date">2025</span>
                     <h2>End-to-End Medallion Architecture Data Pipeline</h2>
                     <span class="position">Databricks, Apache Spark, Lakeflow, dbt, SQL</span>
                     <p>• Developed a scalable data pipeline on Databricks using bronze, silver, gold layers.<br>
